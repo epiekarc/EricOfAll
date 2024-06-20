@@ -1,5 +1,18 @@
 # Casper
 
+## Forked from the official Casper theme for Ghost for EricOfAll.com.
+Official Casper is still set as upstream.
+
+### Changes made:
+- Added Disqus comments script to post.hbs
+- Added Strava and commented out Lightwidget for IG in index.hbs
+- Contact form embedded in contact page through the Ghost Admin panel
+
+
+
+---
+
+
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
 
 &nbsp;
