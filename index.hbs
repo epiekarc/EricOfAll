@@ -37,6 +37,28 @@ into the {body} of the default.hbs template --}}
 
 </div>
 
+
+{{!-- Widgets added by Salem during upgrade - START --}}
+<div style="display: flex; flex-flow: row wrap; margin-bottom: 50px; justify-content: space-between;" > {{!-- Change this div style to "justify-content: center;" after fixing lightwidget IG slider --}}
+
+  {{!-- Strava WIDGET - START --> --}}
+  <iframe height='160' width='300' align='top' align='middle' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/2020934/activity-summary/0ecca20bb38e6c0ff889ba634096ffe5bb9caf8e' style="margin-top: 2px;"></iframe>
+  {{!-- Strava WIDGET - END --> --}}
+
+  {{!-- LightWidget WIDGET - BROKEN, needs updated - START  --}}
+{{!-- BROKEN, needs updating. Remove this whole line (part 1 of 2) to re-enable. --}}
+
+{{!-- <script src="//lightwidget.com/widgets/lightwidget.js"></script> --}}
+ {{!-- <iframe src="//lightwidget.com/widgets/4eea3c59d2625566ad73233e832b1e36.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="border: 0; overflow: hidden; flex-grow: 4;"></iframe> --}}
+
+{{!-- BROKEN, needs updating. Remove this whole line and (part 2 of 2) to re-enable. --}}
+  {{!-- LightWidget WIDGET - END --> --}}
+
+</div>
+{{!-- Widgets added by Salem during upgrade - END --}}
+
+
+
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
 <div class="inner posts">

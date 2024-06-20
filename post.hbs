@@ -86,11 +86,33 @@ into the {body} tag of the default.hbs template --}}
         {{content}}
     </section>
 
-    {{#if comments}}
+{{!-- Ghost built-in comments disabled by Salem during update. Uncomment by deleting wrapping double brackets below with exclamation mark and two dashes before the "{{#if" to re-enable. --}}
+    {{!-- {{#if comments}}
         <section class="article-comments gh-canvas">
             {{comments}}
         </section>
-    {{/if}}
+    {{/if}} --}}
+{{!-- Ghost built-in comments disabled by Salem during update. Uncomment by deleting wrapping double brackets above after "/if}}"" to re-enable. --}}
+
+{{!-- Disqus Added by Salem during update - START --}}
+<section class="post-full-comments" style="min-width: 80%; margin: 0 auto; max-width: 90%;"> {{!-- Change max-width to 90% from 840px during update - Salem --}}
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = "{{url absolute="true"}}";
+        this.page.identifier = "ghost-{{comment_id}}"
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ericofall.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+</section>
+{{!-- Disqus Added by Salem during update - END --}}
 
 </article>
 </main>
