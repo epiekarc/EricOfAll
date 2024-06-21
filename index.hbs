@@ -39,11 +39,14 @@ into the {body} of the default.hbs template --}}
 
 
 {{!-- Widgets added by Salem during upgrade - START --}}
-<div style="display: flex; flex-flow: row wrap; margin-bottom: 50px; justify-content: space-between;" > {{!-- Change this div style to "justify-content: center;" after fixing lightwidget IG slider --}}
+<div style="display: flex; flex-flow: row nowrap; margin-bottom: 50px; justify-content: center;" > {{!-- Change this div style to "justify-content: center;" after fixing lightwidget IG slider --}}
 
+<div style="display: inline-flex; flex-shrink: 1; justify-content: flex-start;"
   {{!-- Strava WIDGET - START --> --}}
   <iframe height='160' width='300' align='top' align='middle' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/2020934/activity-summary/0ecca20bb38e6c0ff889ba634096ffe5bb9caf8e' style="margin-top: 2px;"></iframe>
   {{!-- Strava WIDGET - END --> --}}
+
+</div>
 
   {{!-- LightWidget WIDGET - BROKEN, needs updated - START  --}}
 {{!-- BROKEN, needs updating. Remove this whole line (part 1 of 2) to re-enable. --}}
@@ -54,8 +57,17 @@ into the {body} of the default.hbs template --}}
 {{!-- BROKEN, needs updating. Remove this whole line and (part 2 of 2) to re-enable. --}}
   {{!-- LightWidget WIDGET - END --> --}}
 
+<div style="display: inline-flex; flex-shrink: 1;">
+{{!-- Widgets added by Salem during upgrade - Elfsight, possible replacement for lightwidget - START --}}
+<script src="//static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-089780a3-9208-4b89-a8a8-76ae3c0aa953" data-elfsight-app-lazy></div>
+{{!-- Widgets added by Salem during upgrade - Elfsight, possible replacement for lightwidget - END --}}
+
+</div>
+
 </div>
 {{!-- Widgets added by Salem during upgrade - END --}}
+
 
 
 
